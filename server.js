@@ -6,7 +6,7 @@ const ObjectID = require('mongodb').ObjectID;
 
 const DATABASE_NAME = 'devnotes'
 const MONGO_URL = `mongodb://localhost:27017/${DATABASE_NAME}`;
-const PORT_NUMBER = 3000
+const APP_PORT = process.env.PORT || 3000
 
 const app = express();
 
@@ -17,9 +17,9 @@ async function startDbAndServer() {
   const db = await mongodb.connect(MONGO_URL);
   notes = db.collection('notes')
 
-  await app.listen(PORT_NUMBER);
+  await app.listen(APP_PORT);
   console.log('server started')
-  console.log('Listening on port 3000');
+  console.log('Listening on port ' + APP_PORT);
 };
 
 startDbAndServer();
