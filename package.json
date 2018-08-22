@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "description": "Dev Notes",
   "main": "server.js",
-  "engines": {
-    "node": "7x"
-  },
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
