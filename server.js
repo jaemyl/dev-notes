@@ -5,7 +5,7 @@ const mongodb = require('mongodb').MongoClient;
 const ObjectID = require('mongodb').ObjectID;
 
 const DATABASE_NAME = 'devnotes'
-const MONGO_URI = process.env.MONGO_URI || `mongodb://localhost:27017/${DATABASE_NAME}`;
+const MONGODB_URI = process.env.MONGODB_URI || `mongodb://localhost:27017/${DATABASE_NAME}`;
 const APP_PORT = process.env.PORT || 3000
 
 const app = express();
@@ -14,7 +14,7 @@ app.use(express.static('client/build'));
 
 let notes = null;
 async function startDbAndServer() {
-  const db = await mongodb.connect(MONGO_URI);
+  const db = await mongodb.connect(MONGODB_URI);
   notes = db.collection('notes')
 
   await app.listen(APP_PORT);
