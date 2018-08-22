@@ -1,0 +1,45 @@
+.homescreen {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--page-background-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.title {
+    margin: 20px 50px;
+    font-family: var(--large-heading-font-family);
+    font-size: var(--large-heading-font-size);
+    text-align: center;
+}
+
+.alert {
+    margin: 20px 50px;
+    font-family: var(--small-text-font-family);
+    font-size: var(--small-text-font-size);
+    text-align: center;
+}
+
+.createbutton {
+    margin: var(--create-a-new-note-button-top-bottom-space) var(--create-a-new-note-button-left-right-space);
+    padding: var(--create-a-new-note-button-top-bottom-space) var(--create-a-new-note-button-left-right-space);
+    border: var(--create-a-new-note-button-border);
+    background-color: var(--create-a-new-note-button-background-color);
+    font-family: var(--small-text-font-family);
+    font-size: var(--small-text-font-size);
+    text-align: center;
+}
+
+.createbutton:hover {
+    animation: blacken 0.25s forwards;
+}
+
+@keyframes blacken {
+    to {
+        background-color: black;
+        color: white;
+    }
+}

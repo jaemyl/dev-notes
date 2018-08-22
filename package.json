@@ -1,0 +1,24 @@
+{
+  "name": "dev-notes",
+  "version": "0.1.0",
+  "description": "Dev Notes",
+  "main": "server.js",
+  "engines": {
+    "node": "7x"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongodb": "^2.2.27"
+  },
+  "devDependencies": {
+    "jest": "^23.5.0",
+    "node-fetch": "^2.2.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest"
+  },
+  "author": "Geo Lee and Jae Lee",
+  "license": "MIT"
+}

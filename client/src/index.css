@@ -1,0 +1,27 @@
+:root {
+  --large-heading-font-family: 'Merriweather', serif;
+  --large-heading-font-size: 30pt;
+
+  --small-text-font-family: 'Montserrat', sans-serif;
+  --small-text-font-size: 12pt;
+
+  --note-entry-font-family: 'Source Code Pro', monospace;
+  --note-entry-font-size: 14pt;
+  --note-entry-line-height: 1.2em;
+
+  --create-a-new-note-button-border: 2px solid black;
+  --create-a-new-note-button-top-bottom-space: 20px;
+  --create-a-new-note-button-left-right-space: 50px;
+  --create-a-new-note-button-background-color: white;
+  --create-a-new-note-button-color-transition-time: 0.25s;
+
+  --page-background-color: lavender;
+  --textarea-background-color: rgba(255, 255, 255, 0.50);
+  --footer-background-color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}

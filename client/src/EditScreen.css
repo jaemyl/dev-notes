@@ -1,0 +1,29 @@
+.editscreen {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--page-background-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.editentry {
+    width: 90%;
+    height: 80%;
+    margin: 20px 50px;
+    background-color: var(--textarea-background-color);
+    font-family: var(--note-entry-font-family);
+    font-size: var(--note-entry-font-size);
+    line-height: var(--note-entry-line-height);
+    overflow: auto;
+    text-align: left;
+}
+
+.savebutton {
+    width: 50px;
+    height: 50px;
+    background-image: url(./checked.png);
+    background-size: cover;
+}
