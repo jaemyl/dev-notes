@@ -25,14 +25,14 @@ async function startDbAndServer() {
 startDbAndServer();
 
 ////////////////////////////////////////////////////////////////////////////////
-
+/*
 async function onLoadAll(req, res) {
   console.log("onLoadAll()");
   const result = await notes.find().toArray();
   res.json(result);
 }
 app.get("/loadAll", onLoadAll);
-
+*/
 async function onLoad(req, res) {
   console.log("onLoad()");
   console.log("daet:" + req.params.date);
