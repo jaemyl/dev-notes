@@ -35,7 +35,7 @@ app.get("/loadAll", onLoadAll);
 */
 async function onLoad(req, res) {
   console.log("onLoad()");
-  console.log("daet:" + req.params.date);
+  console.log("date:" + req.params.date);
   const query = { date: req.params.date };
   const result = await notes.findOne(query);
   res.json(result);
